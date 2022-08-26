@@ -9,6 +9,6 @@ public class Info {
         double bacteria = 3.2e+4;
         double moon = 3.84399e+5;
         boolean job = true;
-        long file = 1048576;
+        long file = 1073741824;
     }
 }
