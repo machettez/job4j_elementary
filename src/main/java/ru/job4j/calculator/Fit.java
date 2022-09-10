@@ -13,8 +13,8 @@ public class Fit {
     }
 
     public static void main(String[] args) {
-        short manHeight = 187;
-        short womanHeight = 174;
+        short manHeight = 180;
+        short womanHeight = 170;
         double man = Fit.manWeight(manHeight);
         double woman = Fit.womanWeight(womanHeight);
         System.out.println("Идеальный вес для мужчины с ростом " + manHeight + " = " + man + " кг.");
