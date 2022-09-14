@@ -1,4 +1,4 @@
-package ru.job4j.condition; // test
+package ru.job4j.condition;
 
 public class ThreeMax {
 
