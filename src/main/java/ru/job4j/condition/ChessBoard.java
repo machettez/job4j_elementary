@@ -10,7 +10,7 @@ public class ChessBoard {
                 rsl = Math.abs(x1 - x2);
             }
         }
-        return rsl;
+        return rsl; //test
     }
 
     private static boolean isValid(int coordinate) {
