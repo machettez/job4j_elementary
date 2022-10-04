@@ -5,12 +5,15 @@ import static java.lang.Character.*;
 public class JavaNameValidator {
 
     public static boolean isNameValid(String name) {
-        boolean valid = !name.isEmpty() && !isDigit(name.codePointAt(0)) && !isUpperCase(name.codePointAt(0));
-        for (int i = 1; i < name.length(); i++) {
-            int code = name.codePointAt(i);
-            if (!(isSpecialSymbol(code) || isUpperLatinLetter(code) || isLowerLatinLetter(code) || isDigit(code))) {
-                valid = false;
-                break;
+        boolean valid = false;
+        if (name.isEmpty() || isDigit(name.codePointAt(0)) || isUpperCase(name.codePointAt(0))) {
+            valid = false;
+        } else {
+            for (int i = 1; i < name.length(); i++) {
+                int code = name.codePointAt(i);
+                if (isSpecialSymbol(code) || isUpperLatinLetter(code) || isLowerLatinLetter(code) || isDigit(code)) {
+                    valid = true;
+                }
             }
         }
         return valid;
